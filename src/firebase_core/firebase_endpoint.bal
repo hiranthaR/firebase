@@ -1,6 +1,9 @@
-# Firebase Client Object.
+# Firebase App Object.
+# + firebaseConfig - configurations of firebase
 
 public type Firebase object {
+
+    public FirebaseConfig firebaseConfig;
 
     # initialize the app with firebase configurations
     # + firebaseConfigJson - cofigurations issue by firebase web app
@@ -10,11 +13,7 @@ public type Firebase object {
         if (firebaseConfig is error) {
             return firebaseConfig;
         }
-    }
-
-    # get client for Firebase endpoint
-    public function getClient() {
-
+        self.firebaseConfig = <FirebaseConfig>firebaseConfig;
     }
 };
 
