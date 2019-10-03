@@ -1,6 +1,6 @@
 [project]
 org-name= "hirantha"
-version= "0.0.0"
+version= "0.1.0"
 authors= ["hirantha"]
 repository = "https://github.com/hiranthaR/firebase"
 keywords = ["ballerina","firebase","auth","endpoint","connector"]
